@@ -1,0 +1,140 @@
+{
+  "stationCollection": [
+    {
+      "id": "55d1c870-fd1e-11eb-952e-e9fcf7d425d9",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Armagh",
+      "latitude": "56.34535",
+      "longitude": "-6.3434534",
+      "readings": []
+    },
+    {
+      "id": "02",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Dunmore",
+      "latitude": 52.1499994,
+      "longitude": -6.9833294,
+      "readings": [
+        {
+          "id": "05",
+          "code": "700",
+          "temperature": 8,
+          "windSpeed": 1,
+          "pressure": 1000,
+          "windDirection": 90
+        },
+        {
+          "id": "06",
+          "code": "200",
+          "temperature": 0.5,
+          "windSpeed": 3.5,
+          "pressure": 999,
+          "windDirection": 120
+        }
+      ]
+    },
+    {
+      "id": "5e3c4b90-fd21-11eb-85d4-b7e3b3ffd2f2",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Dublin",
+      "latitude": "56.34535",
+      "longitude": "-6.3434534",
+      "readings": [
+        {
+          "id": "676b85a0-fd21-11eb-85d4-b7e3b3ffd2f2",
+          "code": "100",
+          "temperature": "2",
+          "windSpeed": "423",
+          "windDirection": "34",
+          "pressure": "345"
+        }
+      ],
+      "latestReading": {
+        "id": "676b85a0-fd21-11eb-85d4-b7e3b3ffd2f2",
+        "code": "100",
+        "temperature": "2",
+        "windSpeed": "423",
+        "windDirection": "34",
+        "pressure": "345"
+      },
+      "windChill": -13.47,
+      "weatherText": "Clear",
+      "windText": "North East",
+      "tempF": 35.6,
+      "maxTemp": "2",
+      "minTemp": "2",
+      "maxWind": "423",
+      "minWind": "423",
+      "maxPressure": "345",
+      "minPressure": "345"
+    },
+    {
+      "id": "8be23d20-fd21-11eb-85d4-b7e3b3ffd2f2",
+      "userid": "17917760-fd12-11eb-b190-217decd398c7",
+      "name": "Armagh",
+      "latitude": "56.34535",
+      "longitude": "-6.3434534",
+      "readings": [
+        {
+          "id": "15186dd0-fd22-11eb-85d4-b7e3b3ffd2f2",
+          "code": "100",
+          "temperature": "24",
+          "windSpeed": "2",
+          "windDirection": "123",
+          "pressure": "1322"
+        }
+      ]
+    },
+    {
+      "id": "01",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Tramore",
+      "latitude": 52.16235,
+      "longitude": -7.15244,
+      "readings": [
+        {
+          "id": "03",
+          "code": "800",
+          "temperature": 0.5,
+          "windSpeed": 3.5,
+          "pressure": 1001,
+          "windDirection": 220
+        },
+        {
+          "id": "04",
+          "code": "600",
+          "temperature": 6,
+          "windSpeed": 2,
+          "pressure": 1004,
+          "windDirection": 200
+        },
+        {
+          "id": "89d29a30-fd25-11eb-96d5-918b802e6207",
+          "code": "300",
+          "temperature": "24",
+          "windSpeed": "1",
+          "windDirection": "124",
+          "pressure": "1232"
+        }
+      ],
+      "latestReading": {
+        "id": "04",
+        "code": "600",
+        "temperature": 6,
+        "windSpeed": 2,
+        "pressure": 1004,
+        "windDirection": 200
+      },
+      "windChill": 6.8,
+      "weatherText": "Rain",
+      "windText": "South South West",
+      "tempF": 42.8,
+      "maxTemp": 6,
+      "minTemp": 0.5,
+      "maxWind": 3.5,
+      "minWind": 2,
+      "maxPressure": 1004,
+      "minPressure": 1001
+    }
+  ]
+}
