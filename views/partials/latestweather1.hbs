@@ -1,0 +1,38 @@
+
+<div class="ui five cards">
+
+  <div class="card" style="background-color:#4183c4;">
+    <h3>{{name}}</h3>
+    Lat:<h6>{{latitude}}</h6>
+    Long:<h6>{{longitude}}</h6>
+  </div>
+  <div class="card" style="background-color:#4183c4;">
+    <h3>Weather</h3>
+    <br>
+    {{weatherText}}
+
+  </div>
+  <div class="card" style="background-color:#4183c4;">
+    <h3>Temperature</h3> <br>
+   <h6> {{latestReading.temperature}}C <br>
+    {{tempF}}F</h6>
+    Max: {{maxTemp}}<br>
+    Min: {{minTemp}}
+  </div>
+  <div class="card" style="background-color:#4183c4;">
+    <h3>Wind</h3> <br>
+    <h6>{{latestReading.windSpeed}}bft <br>
+    {{windText}}<br>
+    Feels Like <br>
+    {{windChill}}</h6>
+    Max: {{maxWind}}<br>
+    Min: {{minWind}}
+
+  </div>
+  <div class="card" style="background-color:#4183c4;">
+    <h3>Pressure</h3> <br>
+    <h6>{{latestReading.pressure}}hpa</h6>
+    Max: {{maxPressure}}<br>
+    Min: {{minPressure}}
+  </div>
+</div>

@@ -1,12 +1,92 @@
 {
   "stationCollection": [
     {
+      "id": "2931a560-ff53-11eb-a6a0-c95944321a2e",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Armagh",
+      "latitude": "56.34535",
+      "longitude": "-6.53",
+      "readings": []
+    },
+    {
       "id": "55d1c870-fd1e-11eb-952e-e9fcf7d425d9",
       "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
       "name": "Armagh",
       "latitude": "56.34535",
       "longitude": "-6.3434534",
       "readings": []
+    },
+    {
+      "id": "8be23d20-fd21-11eb-85d4-b7e3b3ffd2f2",
+      "userid": "17917760-fd12-11eb-b190-217decd398c7",
+      "name": "Armagh",
+      "latitude": "56.34535",
+      "longitude": "-6.3434534",
+      "readings": [
+        {
+          "id": "15186dd0-fd22-11eb-85d4-b7e3b3ffd2f2",
+          "code": "100",
+          "temperature": "24",
+          "windSpeed": "2",
+          "windDirection": "123",
+          "pressure": "1322"
+        }
+      ],
+      "latestReading": {
+        "id": "15186dd0-fd22-11eb-85d4-b7e3b3ffd2f2",
+        "code": "100",
+        "temperature": "24",
+        "windSpeed": "2",
+        "windDirection": "123",
+        "pressure": "1322"
+      },
+      "windChill": 25.96,
+      "weatherText": "Clear",
+      "windText": "East South East",
+      "tempF": 75.2
+    },
+    {
+      "id": "5e3c4b90-fd21-11eb-85d4-b7e3b3ffd2f2",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Dublin",
+      "latitude": "56.34535",
+      "longitude": "-6.3434534",
+      "readings": [
+        {
+          "id": "676b85a0-fd21-11eb-85d4-b7e3b3ffd2f2",
+          "code": "100",
+          "temperature": "2",
+          "windSpeed": "423",
+          "windDirection": "34",
+          "pressure": "345"
+        },
+        {
+          "id": "b1e49d90-fea9-11eb-a665-fb0f2dfffc22",
+          "code": "700",
+          "temperature": "45",
+          "windSpeed": "1",
+          "windDirection": "1",
+          "pressure": "1"
+        }
+      ],
+      "latestReading": {
+        "id": "b1e49d90-fea9-11eb-a665-fb0f2dfffc22",
+        "code": "700",
+        "temperature": "45",
+        "windSpeed": "1",
+        "windDirection": "1",
+        "pressure": "1"
+      },
+      "windChill": 47.56,
+      "weatherText": "Snow",
+      "windText": "North",
+      "tempF": 113,
+      "maxTemp": "2",
+      "minTemp": "2",
+      "maxWind": "423",
+      "minWind": "423",
+      "maxPressure": "345",
+      "minPressure": "345"
     },
     {
       "id": "02",
@@ -31,59 +111,19 @@
           "pressure": 999,
           "windDirection": 120
         }
-      ]
-    },
-    {
-      "id": "5e3c4b90-fd21-11eb-85d4-b7e3b3ffd2f2",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Dublin",
-      "latitude": "56.34535",
-      "longitude": "-6.3434534",
-      "readings": [
-        {
-          "id": "676b85a0-fd21-11eb-85d4-b7e3b3ffd2f2",
-          "code": "100",
-          "temperature": "2",
-          "windSpeed": "423",
-          "windDirection": "34",
-          "pressure": "345"
-        }
       ],
       "latestReading": {
-        "id": "676b85a0-fd21-11eb-85d4-b7e3b3ffd2f2",
-        "code": "100",
-        "temperature": "2",
-        "windSpeed": "423",
-        "windDirection": "34",
-        "pressure": "345"
+        "id": "06",
+        "code": "200",
+        "temperature": 0.5,
+        "windSpeed": 3.5,
+        "pressure": 999,
+        "windDirection": 120
       },
-      "windChill": -13.47,
-      "weatherText": "Clear",
-      "windText": "North East",
-      "tempF": 35.6,
-      "maxTemp": "2",
-      "minTemp": "2",
-      "maxWind": "423",
-      "minWind": "423",
-      "maxPressure": "345",
-      "minPressure": "345"
-    },
-    {
-      "id": "8be23d20-fd21-11eb-85d4-b7e3b3ffd2f2",
-      "userid": "17917760-fd12-11eb-b190-217decd398c7",
-      "name": "Armagh",
-      "latitude": "56.34535",
-      "longitude": "-6.3434534",
-      "readings": [
-        {
-          "id": "15186dd0-fd22-11eb-85d4-b7e3b3ffd2f2",
-          "code": "100",
-          "temperature": "24",
-          "windSpeed": "2",
-          "windDirection": "123",
-          "pressure": "1322"
-        }
-      ]
+      "windChill": -0.22,
+      "weatherText": "Partial clouds",
+      "windText": "East South East",
+      "tempF": 32.9
     },
     {
       "id": "01",
@@ -118,23 +158,31 @@
         }
       ],
       "latestReading": {
-        "id": "04",
-        "code": "600",
-        "temperature": 6,
-        "windSpeed": 2,
-        "pressure": 1004,
-        "windDirection": 200
+        "id": "89d29a30-fd25-11eb-96d5-918b802e6207",
+        "code": "300",
+        "temperature": "24",
+        "windSpeed": "1",
+        "windDirection": "124",
+        "pressure": "1232"
       },
-      "windChill": 6.8,
-      "weatherText": "Rain",
-      "windText": "South South West",
-      "tempF": 42.8,
+      "windChill": 26.18,
+      "weatherText": "Cloudy",
+      "windText": "South East",
+      "tempF": 75.2,
       "maxTemp": 6,
       "minTemp": 0.5,
       "maxWind": 3.5,
       "minWind": 2,
       "maxPressure": 1004,
       "minPressure": 1001
+    },
+    {
+      "id": "37557d10-ff53-11eb-a6a0-c95944321a2e",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Offaly",
+      "latitude": "54.345556",
+      "longitude": "-6.3223",
+      "readings": []
     }
   ]
 }
