@@ -168,6 +168,48 @@ const dashboard = {
         }
         stations[i].readings.minPressure = minPressure;
       }
+
+      let tempTrend = null;
+      const trendValues = new Array(stations[i].readings[(stations[i].readings.length - 3)], stations[i].readings[(stations[i].readings.length - 2)], stations[i].readings[(stations[i].readings.length - 1)]);
+      if (stations[i].readings.length > 2) {
+        if ((trendValues[0].temperature > trendValues[1].temperature) && (trendValues[1].temperature > trendValues[2].temperature)) {
+          tempTrend = "Falling";
+        } else if ((trendValues[0].temperature < trendValues[1].temperature) && (trendValues[1].temperature < trendValues[2].temperature)) {
+          tempTrend = "Rising";
+        } else {
+          tempTrend = "Steady";
+        }
+        logger.debug ("Temp Trend :" + tempTrend);
+        stations[i].readings.tempTrend = tempTrend;
+      }
+
+      let windTrend = null;
+      const windTrendValues = new Array(stations[i].readings[(stations[i].readings.length - 3)], stations[i].readings[(stations[i].readings.length - 2)], stations[i].readings[(stations[i].readings.length - 1)]);
+      if (stations[i].readings.length > 2) {
+        if ((windTrendValues[0].windSpeed > windTrendValues[1].windSpeed) && (windTrendValues[1].windSpeed > windTrendValues[2].windSpeed)) {
+          windTrend = "Falling";
+        } else if ((windTrendValues[0].windSpeed < windTrendValues[1].windSpeed) && (windTrendValues[1].windSpeed < windTrendValues[2].windSpeed)) {
+          windTrend = "Rising";
+        } else {
+          windTrend = "Steady";
+        }
+        logger.debug ("Wind Trend :" + windTrend);
+        stations[i].readings.windTrend = windTrend;
+      }
+
+      let pressureTrend = null;
+      const pressureTrendValues = new Array(stations[i].readings[(stations[i].readings.length - 3)], stations[i].readings[(stations[i].readings.length - 2)], stations[i].readings[(stations[i].readings.length - 1)]);
+      if (stations[i].readings.length > 2) {
+        if ((pressureTrendValues[0].pressure > pressureTrendValues[1].pressure) && (pressureTrendValues[1].pressure > pressureTrendValues[2].pressure)) {
+          pressureTrend = "Falling";
+        } else if ((pressureTrendValues[0].pressure < pressureTrendValues[1].pressure) && (pressureTrendValues[1].pressure < pressureTrendValues[2].pressure)) {
+          pressureTrend = "Rising";
+        } else {
+          pressureTrend = "Steady";
+        }
+        logger.debug ("pressure Trend :" + pressureTrend);
+        stations[i].readings.pressureTrend = pressureTrend;
+      }
       }
 
 

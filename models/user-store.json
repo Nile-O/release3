@@ -20,6 +20,13 @@
       "email": "nile@simpson.com",
       "password": "secret",
       "id": "3414a4f0-fd19-11eb-bb13-c3cf286ca38d"
+    },
+    {
+      "firstName": "Helen",
+      "lastName": "O'Reilly",
+      "email": "helen@simpson.com",
+      "password": "cavan",
+      "id": "1224be20-02a5-11ec-99df-d7da941edeba"
     }
   ]
 }

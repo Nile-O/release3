@@ -1,22 +1,6 @@
 {
   "stationCollection": [
     {
-      "id": "2931a560-ff53-11eb-a6a0-c95944321a2e",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Armagh",
-      "latitude": "56.34535",
-      "longitude": "-6.53",
-      "readings": []
-    },
-    {
-      "id": "55d1c870-fd1e-11eb-952e-e9fcf7d425d9",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "name": "Armagh",
-      "latitude": "56.34535",
-      "longitude": "-6.3434534",
-      "readings": []
-    },
-    {
       "id": "8be23d20-fd21-11eb-85d4-b7e3b3ffd2f2",
       "userid": "17917760-fd12-11eb-b190-217decd398c7",
       "name": "Armagh",
@@ -25,6 +9,7 @@
       "readings": [
         {
           "id": "15186dd0-fd22-11eb-85d4-b7e3b3ffd2f2",
+          "date": "2021-01-19 08:31:00",
           "code": "100",
           "temperature": "24",
           "windSpeed": "2",
@@ -34,6 +19,7 @@
       ],
       "latestReading": {
         "id": "15186dd0-fd22-11eb-85d4-b7e3b3ffd2f2",
+        "date": "2021-01-19 08:31:00",
         "code": "100",
         "temperature": "24",
         "windSpeed": "2",
@@ -46,6 +32,14 @@
       "tempF": 75.2
     },
     {
+      "id": "55d1c870-fd1e-11eb-952e-e9fcf7d425d9",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Armagh",
+      "latitude": "56.34535",
+      "longitude": "-6.3434534",
+      "readings": []
+    },
+    {
       "id": "5e3c4b90-fd21-11eb-85d4-b7e3b3ffd2f2",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Dublin",
@@ -54,6 +48,7 @@
       "readings": [
         {
           "id": "676b85a0-fd21-11eb-85d4-b7e3b3ffd2f2",
+          "date": "2021-01-20 10:31:00",
           "code": "100",
           "temperature": "2",
           "windSpeed": "423",
@@ -62,31 +57,99 @@
         },
         {
           "id": "b1e49d90-fea9-11eb-a665-fb0f2dfffc22",
+          "date": "2021-02-01 08:47:00",
           "code": "700",
           "temperature": "45",
           "windSpeed": "1",
           "windDirection": "1",
           "pressure": "1"
+        },
+        {
+          "id": "3cb74ee0-ff68-11eb-a0d5-c9b5859c0764",
+          "date": "2021-08-17T14:34:32.526Z",
+          "code": "200",
+          "temperature": "23",
+          "windSpeed": "10",
+          "windDirection": "300",
+          "pressure": "1200"
+        },
+        {
+          "id": "5a21aa10-001d-11ec-ba70-dd95b07f4316",
+          "date": "2021-08-18T12:11:00.783Z",
+          "code": "300",
+          "temperature": "18",
+          "windSpeed": "1",
+          "windDirection": "12",
+          "pressure": "12"
+        },
+        {
+          "id": "b74e0d00-001d-11ec-bbfb-2df619c31507",
+          "date": "2021-08-18T12:13:37.103Z",
+          "code": "200",
+          "temperature": "17",
+          "windSpeed": "10",
+          "windDirection": "1",
+          "pressure": "12"
+        },
+        {
+          "id": "25f4f740-001f-11ec-a8b6-dde69583cd30",
+          "date": "2021-08-18T12:23:52.242Z",
+          "code": "300",
+          "temperature": "19",
+          "windSpeed": "3",
+          "windDirection": "344",
+          "pressure": "1222"
+        },
+        {
+          "id": "45410d00-001f-11ec-a8b6-dde69583cd30",
+          "date": "2021-08-18T12:24:44.752Z",
+          "code": "700",
+          "temperature": "24",
+          "windSpeed": "1",
+          "windDirection": "123",
+          "pressure": "1233"
+        },
+        {
+          "id": "56e86620-001f-11ec-a8b6-dde69583cd30",
+          "date": "2021-08-18T12:25:14.370Z",
+          "code": "200",
+          "temperature": "35",
+          "windSpeed": "0",
+          "windDirection": "234",
+          "pressure": "1244"
+        },
+        {
+          "id": "224b96f0-0022-11ec-b412-3da870b19f9e",
+          "date": "2021-08-18T12:45:14.591Z",
+          "code": "200",
+          "temperature": "24",
+          "windSpeed": "15",
+          "windDirection": "133",
+          "pressure": "1233"
         }
       ],
       "latestReading": {
-        "id": "b1e49d90-fea9-11eb-a665-fb0f2dfffc22",
-        "code": "700",
-        "temperature": "45",
-        "windSpeed": "1",
-        "windDirection": "1",
-        "pressure": "1"
+        "id": "224b96f0-0022-11ec-b412-3da870b19f9e",
+        "date": "2021-08-18T12:45:14.591Z",
+        "code": "200",
+        "temperature": "24",
+        "windSpeed": "15",
+        "windDirection": "133",
+        "pressure": "1233"
       },
-      "windChill": 47.56,
-      "weatherText": "Snow",
-      "windText": "North",
-      "tempF": 113,
-      "maxTemp": "2",
-      "minTemp": "2",
+      "windChill": 25.18,
+      "weatherText": "Partial clouds",
+      "windText": "South East",
+      "tempF": 75.2,
+      "maxTemp": "45",
+      "minTemp": "17",
       "maxWind": "423",
-      "minWind": "423",
+      "minWind": "0",
       "maxPressure": "345",
-      "minPressure": "345"
+      "minPressure": "1",
+      "tempTrend": "Steady",
+      "windTrend": "Steady",
+      "pressureTrend": "Steady"
     },
     {
       "id": "02",
@@ -97,6 +160,7 @@
       "readings": [
         {
           "id": "05",
+          "date": "2021-02-03 10:45:00",
           "code": "700",
           "temperature": 8,
           "windSpeed": 1,
@@ -105,6 +169,7 @@
         },
         {
           "id": "06",
+          "date": "2021-02-04 10:55:00",
           "code": "200",
           "temperature": 0.5,
           "windSpeed": 3.5,
@@ -114,6 +179,7 @@
       ],
       "latestReading": {
         "id": "06",
+        "date": "2021-02-04 10:55:00",
         "code": "200",
         "temperature": 0.5,
         "windSpeed": 3.5,
@@ -126,6 +192,64 @@
       "tempF": 32.9
     },
     {
+      "id": "37557d10-ff53-11eb-a6a0-c95944321a2e",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Offaly",
+      "latitude": "54.345556",
+      "longitude": "-6.3223",
+      "readings": [
+        {
+          "id": "66b88d40-029b-11ec-81da-f7cdcb12952c",
+          "date": "2021-08-21T16:18:20.817Z",
+          "code": "100",
+          "temperature": "10",
+          "windSpeed": "10",
+          "windDirection": "10",
+          "pressure": "10"
+        },
+        {
+          "id": "6fe75220-029b-11ec-81da-f7cdcb12952c",
+          "date": "2021-08-21T16:18:36.226Z",
+          "code": "200",
+          "temperature": "20",
+          "windSpeed": "20",
+          "windDirection": "20",
+          "pressure": "20"
+        },
+        {
+          "id": "7b32b570-029b-11ec-81da-f7cdcb12952c",
+          "date": "2021-08-21T16:18:55.175Z",
+          "code": "400",
+          "temperature": "30",
+          "windSpeed": "30",
+          "windDirection": "30",
+          "pressure": "30"
+        }
+      ],
+      "latestReading": {
+        "id": "7b32b570-029b-11ec-81da-f7cdcb12952c",
+        "date": "2021-08-21T16:18:55.175Z",
+        "code": "400",
+        "temperature": "30",
+        "windSpeed": "30",
+        "windDirection": "30",
+        "pressure": "30"
+      },
+      "windChill": 32.67,
+      "weatherText": "Light Showers",
+      "windText": "North North East",
+      "tempF": 86,
+      "maxTemp": "30",
+      "minTemp": "10",
+      "maxWind": "30",
+      "minWind": "10",
+      "maxPressure": "30",
+      "minPressure": "10",
+      "tempTrend": "Rising",
+      "windTrend": "Rising",
+      "pressureTrend": "Rising"
+    },
+    {
       "id": "01",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Tramore",
@@ -134,6 +258,7 @@
       "readings": [
         {
           "id": "03",
+          "date": "2021-02-04 10:34:00",
           "code": "800",
           "temperature": 0.5,
           "windSpeed": 3.5,
@@ -142,6 +267,7 @@
         },
         {
           "id": "04",
+          "date": "2021-02-06 14:34:00",
           "code": "600",
           "temperature": 6,
           "windSpeed": 2,
@@ -150,6 +276,7 @@
         },
         {
           "id": "89d29a30-fd25-11eb-96d5-918b802e6207",
+          "date": "2021-02-07 12:34:00",
           "code": "300",
           "temperature": "24",
           "windSpeed": "1",
@@ -159,6 +286,7 @@
       ],
       "latestReading": {
         "id": "89d29a30-fd25-11eb-96d5-918b802e6207",
+        "date": "2021-02-07 12:34:00",
         "code": "300",
         "temperature": "24",
         "windSpeed": "1",
@@ -169,19 +297,22 @@
       "weatherText": "Cloudy",
       "windText": "South East",
       "tempF": 75.2,
-      "maxTemp": 6,
+      "maxTemp": "24",
       "minTemp": 0.5,
       "maxWind": 3.5,
-      "minWind": 2,
-      "maxPressure": 1004,
-      "minPressure": 1001
+      "minWind": "1",
+      "maxPressure": "1232",
+      "minPressure": 1001,
+      "tempTrend": "Rising",
+      "windTrend": "Falling",
+      "pressureTrend": "Rising"
     },
     {
-      "id": "37557d10-ff53-11eb-a6a0-c95944321a2e",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Offaly",
-      "latitude": "54.345556",
-      "longitude": "-6.3223",
+      "id": "ac861310-02a5-11ec-8aa8-f98dc78c6143",
+      "userid": "1224be20-02a5-11ec-99df-d7da941edeba",
+      "name": "Tipperary",
+      "latitude": "54.5677",
+      "longitude": "-6.3455",
       "readings": []
     }
   ]

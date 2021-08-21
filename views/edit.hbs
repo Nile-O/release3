@@ -1,0 +1,24 @@
+{{> menu id="edit"}}
+
+<form class="ui stacked segment form" action="/edit" method="POST">
+  <h3 class="ui header">Edit User Information</h3>
+  <div class="two fields">
+    <div class="field">
+      <label>First Name</label>
+      <input placeholder="First Name" type="text"  name="firstName" value="{{edit.firstName}}">
+    </div>
+    <div class="field">
+      <label>Last Name</label>
+      <input placeholder="Last Name" type="text"  name="lastName" value="{{edit.lastName}}">
+    </div>
+  </div>
+  <div class="field">
+    <label>Email</label>
+    <input placeholder="Email" type="text" name="email" value="{{edit.email}}">
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <input type="password" name="password" value="{{edit.password}}">
+  </div>
+  <button class="ui blue submit button">Edit</button>
+</form>

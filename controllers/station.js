@@ -77,33 +77,34 @@ function windDirectionText(windDirection) {
   return result;
 }
 
+
 const station = {
-  index(request, response) {
+  index: function(request, response) {
     const stationId = request.params.id;
-    logger.debug('Station id = ', stationId);
+    logger.debug("Station id = ", stationId);
     const station = stationStore.getStation(stationId);
     if (station.readings.length !== 0) {
-        let latestReading = station.readings[station.readings.length - 1];
-        station.latestReading = latestReading;
-        let windChill = null;
-        windChill = Math.round((13.12 + (0.6215 * latestReading.temperature) - (11.37 * (Math.pow(latestReading.windSpeed, 0.16))) + ((0.3965 * latestReading.temperature) * (Math.pow(latestReading.windSpeed, 0.16)))) * 100.0) / 100.0;
-        station.windChill = windChill;
-        let weatherText = null;
-        weatherText = weatherCode(latestReading.code);
-        station.weatherText = weatherText;
-        let windText = null;
-        windText = windDirectionText(latestReading.windDirection);
-        station.windText = windText;
-        let tempF = null;
-        tempF = (latestReading.temperature * 9 / 5) + 32;
-        station.tempF = tempF;
+      let latestReading = station.readings[station.readings.length - 1];
+      station.latestReading = latestReading;
+      let windChill = null;
+      windChill = Math.round((13.12 + (0.6215 * latestReading.temperature) - (11.37 * (Math.pow(latestReading.windSpeed, 0.16))) + ((0.3965 * latestReading.temperature) * (Math.pow(latestReading.windSpeed, 0.16)))) * 100.0) / 100.0;
+      station.windChill = windChill;
+      let weatherText = null;
+      weatherText = weatherCode(latestReading.code);
+      station.weatherText = weatherText;
+      let windText = null;
+      windText = windDirectionText(latestReading.windDirection);
+      station.windText = windText;
+      let tempF = null;
+      tempF = (latestReading.temperature * 9 / 5) + 32;
+      station.tempF = tempF;
 
       let maxTemp = 0;
       if (station.readings.length > 0) {
         maxTemp = station.readings[0].temperature;
-        for (let i= 1; i < station.readings.length; i++) {
+        for (let i = 1; i < station.readings.length; i++) {
           if (station.readings[i].temperature > maxTemp) {
-            maxTemp = station.readings[i].temperature
+            maxTemp = station.readings[i].temperature;
           }
         }
       }
@@ -112,9 +113,9 @@ const station = {
       let minTemp = 0;
       if (station.readings.length > 0) {
         minTemp = station.readings[0].temperature;
-        for (let i= 1; i < station.readings.length; i++) {
+        for (let i = 1; i < station.readings.length; i++) {
           if (station.readings[i].temperature < minTemp) {
-            minTemp = station.readings[i].temperature
+            minTemp = station.readings[i].temperature;
           }
         }
       }
@@ -123,9 +124,9 @@ const station = {
       let maxWind = 0;
       if (station.readings.length > 0) {
         maxWind = station.readings[0].windSpeed;
-        for (let i= 1; i < station.readings.length; i++) {
+        for (let i = 1; i < station.readings.length; i++) {
           if (station.readings[i].windSpeed > maxWind) {
-            maxWind = station.readings[i].windSpeed
+            maxWind = station.readings[i].windSpeed;
           }
         }
       }
@@ -134,9 +135,9 @@ const station = {
       let minWind = 0;
       if (station.readings.length > 0) {
         minWind = station.readings[0].windSpeed;
-        for (let i= 1; i < station.readings.length; i++) {
+        for (let i = 1; i < station.readings.length; i++) {
           if (station.readings[i].windSpeed < minWind) {
-            minWind = station.readings[i].windSpeed
+            minWind = station.readings[i].windSpeed;
           }
         }
       }
@@ -145,9 +146,9 @@ const station = {
       let maxPressure = 0;
       if (station.readings.length > 0) {
         maxPressure = station.readings[0].pressure;
-        for (let i= 1; i < station.readings.length; i++) {
+        for (let i = 1; i < station.readings.length; i++) {
           if (station.readings[i].pressure > maxPressure) {
-            maxPressure = station.readings[i].pressure
+            maxPressure = station.readings[i].pressure;
           }
         }
       }
@@ -156,19 +157,62 @@ const station = {
       let minPressure = 0;
       if (station.readings.length > 0) {
         minPressure = station.readings[0].pressure;
-        for (let i= 1; i < station.readings.length; i++) {
+        for (let i = 1; i < station.readings.length; i++) {
           if (station.readings[i].pressure < minPressure) {
-            minPressure = station.readings[i].pressure
+            minPressure = station.readings[i].pressure;
           }
         }
       }
       station.minPressure = minPressure;
+
+      let tempTrend = null;
+      const trendValues = new Array(station.readings[(station.readings.length - 3)], station.readings[(station.readings.length - 2)], station.readings[(station.readings.length - 1)]);
+      if (station.readings.length > 2) {
+        if ((trendValues[0].temperature > trendValues[1].temperature) && (trendValues[1].temperature > trendValues[2].temperature)) {
+          tempTrend = "Falling";
+        } else if ((trendValues[0].temperature < trendValues[1].temperature) && (trendValues[1].temperature < trendValues[2].temperature)) {
+          tempTrend = "Rising";
+        } else {
+          tempTrend = "Steady";
+        }
+        logger.debug ("Temp Trend :" + tempTrend);
+        station.tempTrend = tempTrend;
       }
+
+      let windTrend = null;
+      const windTrendValues = new Array(station.readings[(station.readings.length - 3)], station.readings[(station.readings.length - 2)], station.readings[(station.readings.length - 1)]);
+      if (station.readings.length > 2) {
+        if ((windTrendValues[0].windSpeed > windTrendValues[1].windSpeed) && (windTrendValues[1].windSpeed > windTrendValues[2].windSpeed)) {
+          windTrend = "Falling";
+        } else if ((windTrendValues[0].windSpeed < windTrendValues[1].windSpeed) && (windTrendValues[1].windSpeed < windTrendValues[2].windSpeed)) {
+          windTrend = "Rising";
+        } else {
+          windTrend = "Steady";
+        }
+        logger.debug ("Wind Trend :" + windTrend);
+        station.windTrend = windTrend;
+      }
+
+      let pressureTrend = null;
+      const pressureTrendValues = new Array(station.readings[(station.readings.length - 3)], station.readings[(station.readings.length - 2)], station.readings[(station.readings.length - 1)]);
+      if (station.readings.length > 2) {
+        if ((pressureTrendValues[0].pressure > pressureTrendValues[1].pressure) && (pressureTrendValues[1].pressure > pressureTrendValues[2].pressure)) {
+          pressureTrend = "Falling";
+        } else if ((pressureTrendValues[0].pressure < pressureTrendValues[1].pressure) && (pressureTrendValues[1].pressure < pressureTrendValues[2].pressure)) {
+          pressureTrend = "Rising";
+        } else {
+          pressureTrend = "Steady";
+        }
+        logger.debug ("pressure Trend :" + pressureTrend);
+        station.pressureTrend = pressureTrend;
+      }
+    }
+
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
-      title: 'Station',
+      title: "Station",
       station: station,
-      users: loggedInUser,
+      users: loggedInUser
     };
     response.render("station", viewData);
   },
@@ -176,8 +220,10 @@ const station = {
   addReading(request, response) {
     const stationId = request.params.id;
     const station = stationStore.getStation(stationId);
+    const date = new Date().toISOString();
     const newReading = {
       id: uuid.v1(),
+      date: date,
       code: request.body.code,
       temperature: request.body.temperature,
       windSpeed: request.body.windSpeed,

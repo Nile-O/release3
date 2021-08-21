@@ -51,6 +51,7 @@ const accounts = {
     }
   },
 
+
   getCurrentUser(request) {
     const userEmail = request.cookies.station;
     return userstore.getUserByEmail(userEmail);

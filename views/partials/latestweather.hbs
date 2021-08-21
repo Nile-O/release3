@@ -11,13 +11,15 @@
     <br>
     {{station.weatherText}}
 
+
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Temperature</h3> <br>
     {{station.latestReading.temperature}}C <br>
     {{station.tempF}}F <br>
     Max: {{station.maxTemp}}<br>
-    Min: {{station.minTemp}}
+    Min: {{station.minTemp}}<br>
+    Trend: {{station.tempTrend}}
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Wind</h3> <br>
@@ -26,13 +28,15 @@
     Feels Like <br>
     {{station.windChill}}<br>
     Max: {{station.maxWind}}<br>
-    Min: {{station.minWind}}
+    Min: {{station.minWind}}<br>
+    Trend: {{station.windTrend}}
 
   </div>
-  <div class="card"style="background-color:#4183c4;">
+  <div class="card" style="background-color:#4183c4;">
     <h3>Pressure</h3> <br>
     {{station.latestReading.pressure}}hpa <br>
     Max: {{station.maxPressure}}<br>
-    Min: {{station.minPressure}}
+    Min: {{station.minPressure}}<br>
+    Trend: {{station.pressureTrend}}
   </div>
 </div>
