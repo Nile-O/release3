@@ -37,7 +37,17 @@
       "name": "Armagh",
       "latitude": "56.34535",
       "longitude": "-6.3434534",
-      "readings": []
+      "readings": [
+        {
+          "id": "2f660170-0e66-11ec-9e87-bd4c34792998",
+          "date": "2021-09-05T16:27:38.621Z",
+          "code": "300",
+          "temperature": "20",
+          "windSpeed": "10",
+          "windDirection": "1",
+          "pressure": "1200"
+        }
+      ]
     },
     {
       "id": "5e3c4b90-fd21-11eb-85d4-b7e3b3ffd2f2",
@@ -250,6 +260,14 @@
       "pressureTrend": "Rising"
     },
     {
+      "id": "ac861310-02a5-11ec-8aa8-f98dc78c6143",
+      "userid": "1224be20-02a5-11ec-99df-d7da941edeba",
+      "name": "Tipperary",
+      "latitude": "54.5677",
+      "longitude": "-6.3455",
+      "readings": []
+    },
+    {
       "id": "01",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Tramore",
@@ -306,14 +324,6 @@
       "tempTrend": "Rising",
       "windTrend": "Falling",
       "pressureTrend": "Rising"
-    },
-    {
-      "id": "ac861310-02a5-11ec-8aa8-f98dc78c6143",
-      "userid": "1224be20-02a5-11ec-99df-d7da941edeba",
-      "name": "Tipperary",
-      "latitude": "54.5677",
-      "longitude": "-6.3455",
-      "readings": []
     }
   ]
 }

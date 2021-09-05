@@ -3,11 +3,13 @@
 
   <div class="card" style="background-color:#4183c4;">
     <h3>{{station.name}}</h3>
+    <em class="big" data-emoji=":compass:"></em>
     <h4>Lat:</h4>{{station.latitude}}
     <h4> Long:</h4>{{station.longitude}}
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Weather</h3>
+    <em class="big" data-emoji=":white_sun_small_cloud:"></em>
     <br>
     {{station.weatherText}}
 
@@ -15,6 +17,7 @@
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Temperature</h3> <br>
+    <em class="big" data-emoji=":thermometer:"></em>
     {{station.latestReading.temperature}}C <br>
     {{station.tempF}}F <br>
     Max: {{station.maxTemp}}<br>
@@ -23,6 +26,7 @@
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Wind</h3> <br>
+    <i class="teal massive wind icon"></i><br>
     {{station.latestReading.windSpeed}}bft <br>
     {{station.windText}}<br>
     Feels Like <br>
@@ -34,6 +38,7 @@
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Pressure</h3> <br>
+    <i class="red massive tachometer alternate icon"></i>
     {{station.latestReading.pressure}}hpa <br>
     Max: {{station.maxPressure}}<br>
     Min: {{station.minPressure}}<br>

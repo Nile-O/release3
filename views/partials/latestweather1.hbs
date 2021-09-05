@@ -3,17 +3,20 @@
 
   <div class="card" style="background-color:#4183c4;">
     <h3>{{name}}</h3>
+    <em class="big" data-emoji=":compass:"></em>
     <h5>Lat: {{latitude}}<br>
     Long: {{longitude}}</h5>
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Weather</h3>
+    <em class="big" data-emoji=":white_sun_small_cloud:"></em>
     <br>
    <h5>{{weatherText}}</h5>
 
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Temperature</h3> <br>
+    <em class="big" data-emoji=":thermometer:"></em>
    <h5> {{latestReading.temperature}} C <br>
     {{tempF}} F<br>
     Max: {{maxTemp}}<br>
@@ -23,6 +26,7 @@
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Wind</h3> <br>
+    <i class="teal massive wind icon"></i><br>
     <h5>{{latestReading.windSpeed}} bft <br>
     {{windText}}<br>
     Feels Like <br>
@@ -34,6 +38,7 @@
   </div>
   <div class="card" style="background-color:#4183c4;">
     <h3>Pressure</h3> <br>
+    <i class="red massive tachometer alternate icon"></i>
     <h5>{{latestReading.pressure}} hpa<br>
     Max: {{maxPressure}}<br>
     Min: {{minPressure}}<br>
