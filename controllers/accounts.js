@@ -42,7 +42,8 @@ const accounts = {
 
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
-    if (user) {
+    const password = userstore.getUserByPassword(request.body.password);
+    if (user && password) {
       response.cookie('station', user.email);
       logger.info(`logging in ${user.email}`);
       response.redirect('/dashboard');
